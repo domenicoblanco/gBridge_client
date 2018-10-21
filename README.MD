@@ -4,8 +4,8 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
 
 # Installation
 - [Debian](#debian)
-- Windows   [*TODO*]
-- macOS   [*TODO*]
+- Windows   [*TODO*](#todo)
+- macOS   [*TODO*])#todo)
 
 # Debian
    First of all, create a new [gBridge account](https://gbridge.kappelt.net/register).
