@@ -9,7 +9,7 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
 
 # Debian
    First of all, create a new [gBridge account](https://gbridge.kappelt.net/register).
-   Install the dependencies and devDependencies and start the server.
+   Install the dependencies.
    ```sh
      $ sudo apt install python3 mosquitto
      $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
