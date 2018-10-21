@@ -3,7 +3,7 @@
 This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assistant using [Kappelt gBridge](https://about.gbridge.kappelt.net/) 
 
 # Installation
-- [Debian](https://github.com/domenicoblanco/gBridge_client#debian)
+- [Debian](/README.md#debian)
 - Windows   [*TODO*]
 - macOS   [*TODO*]
 
@@ -40,14 +40,14 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
    ```sh
     $ sudo service mosquitto restart
    ```
-   Now we're ready to setup our client, let's set it up. Open the [client](https://github.com/domenicoblanco/gBridge_client/blob/master/client.py) and edit `MQTT_TOPIC` and `PIN` according to your needs and your gBridge topic's name.
+   Now we're ready to setup our client, let's set it up. Open the [client](/client.py) and edit `MQTT_TOPIC` and `PIN` according to your needs and your gBridge topic's name.
    **Start the client**
     Your client is complete, it's time to execute it with `python3 client.py`
     
 # TODO
-   [] Improve English
-   [] Write Windows setup guide
-   [] Write macOS setup guide
+   [ ] Improve English
+   [ ] Write Windows setup guide
+   [ ] Write macOS setup guide
     
 
      
