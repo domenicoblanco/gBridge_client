@@ -3,7 +3,7 @@
 This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assistant using [Kappelt gBridge](https://about.gbridge.kappelt.net/) 
 
 # Installation
-- [Debian](#Debian)
+- [Debian](https://github.com/domenicoblanco/gBridge_client#debian)
 - Windows   [*TODO*]
 - macOS   [*TODO*]
 
