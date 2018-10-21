@@ -40,7 +40,7 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
    ```sh
     $ sudo service mosquitto restart
    ```
-   Now we're ready to setup our client, let's set it up. Open the [client](*Insert file link here*) and edit `MQTT_TOPIC` and `PIN` according to your needs and your gBridge topic's name.
+   Now we're ready to setup our client, let's set it up. Open the [client](https://github.com/domenicoblanco/gBridge_client/blob/master/client.py) and edit `MQTT_TOPIC` and `PIN` according to your needs and your gBridge topic's name.
    **Start the client**
     Your client is complete, it's time to execute it with `python3 client.py`
     
