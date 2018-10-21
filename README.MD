@@ -3,7 +3,7 @@
 This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assistant using [Kappelt gBridge](https://about.gbridge.kappelt.net/) 
 
 # Installation
-- [Debian](#Debian)
+- [Debian](#debian)
 - Windows   [*TODO*]
 - macOS   [*TODO*]
 
@@ -35,7 +35,7 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
     bridge_capath /etc/ssl/certs/
     bridge_tls_version tlsv1.2
    ```
-   ❗gBridge credentials are available [here]()ttps://gbridge.kappelt.net/profile). Remember to set your password  in that page.
+   ❗gBridge credentials are available [here](ttps://gbridge.kappelt.net/profile). Remember to set your password  in that page.
    **Restart Mosquitto**
    ```sh
     $ sudo service mosquitto restart
