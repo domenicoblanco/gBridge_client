@@ -45,9 +45,9 @@ This is an **unofficial** client to connect Raspberry Pi's GPIO to Google Assist
     Your client is complete, it's time to execute it with `python3 client.py`
     
 # TODO
-   [ ] Improve English
-   [ ] Write Windows setup guide
-   [ ] Write macOS setup guide
+   [] Improve English
+   [] Write Windows setup guide
+   [] Write macOS setup guide
     
 
      
