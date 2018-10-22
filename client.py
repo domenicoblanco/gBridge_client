@@ -12,11 +12,11 @@ import time
 MQTT_HOST = "127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 60
-MQTT_TOPIC = "INSERT YOUR TOPIC"
+MQTT_TOPIC = "gBridge/u68/d112/onoff"
 
-PIN = "INSERT YOUR PIN NUMBER"
+LED1 = 13
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(PIN, GPIO.OUT)
+GPIO.setup(LED1, GPIO.OUT)
 try:
   # Define on_message event function. 
   # This function will be invoked every time,
@@ -24,16 +24,16 @@ try:
   def on_message(mosq, obj, msg):
     if(str(msg.topic)==MQTT_TOPIC):
       print(str(msg.topic))
-      GPIO.output(PIN,GPIO.HIGH)
-      GPIO.output(PIN,GPIO.LOW)
+      GPIO.output(LED1,GPIO.HIGH)
+      GPIO.output(LED1,GPIO.LOW)
       time.sleep(0.15)
-      GPIO.output(PIN,GPIO.HIGH)
+      GPIO.output(LED1,GPIO.HIGH)
       print "Topic: " + str(msg.topic)
       print "QoS: " + str(msg.qos)
       mqttc.publish(MQTT_TOPIC+"/set", 0)
       print "Topic updated"
-    else:
-      print(str(msg.payload))
+    if(str(msg.topic)==MQTT_TOPIC+"/set"):
+      print("Update status: "+str(msg.payload))
 
   # Initiate MQTT Client
   mqttc = mqtt.Client()
